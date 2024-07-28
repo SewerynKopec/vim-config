@@ -1,10 +1,10 @@
-require 'keymaps'
-
-require 'options'
-
 require 'lazy-bootstrap'
 
 require 'lazy-plugins'
+
+require 'keymaps'
+
+require 'options'
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
