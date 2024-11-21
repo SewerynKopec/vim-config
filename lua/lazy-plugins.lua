@@ -23,6 +23,8 @@ require('lazy').setup({
   --  This is equivalent to:
   --    require('Comment').setup({})
 
+  require 'plugins/dashboard-nvim',
+
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
@@ -41,7 +43,7 @@ require('lazy').setup({
   require 'plugins/cmp',
 
   require 'plugins/tokyonight',
-  
+
   -- require 'plugins/cyberdream',
 
   require 'plugins/todo-comments',
