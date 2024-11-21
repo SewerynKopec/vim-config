@@ -62,7 +62,7 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  require 'plugins/debug',
+  -- require 'plugins/debug',
 
   -- require 'plugins/rainbow_delimiters',
 

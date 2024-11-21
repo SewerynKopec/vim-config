@@ -10,8 +10,8 @@ return {
       signs = {
         add = { text = '+' },
         change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
+        delete = { text = 'x' },
+        topdelete = { text = 'x' },
         changedelete = { text = '~' },
       },
       on_attach = function(bufnr)
