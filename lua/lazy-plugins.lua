@@ -42,9 +42,11 @@ require('lazy').setup({
 
   require 'plugins/cmp',
 
-  require 'plugins/tokyonight',
+  -- require 'plugins/tokyonight',
 
   -- require 'plugins/cyberdream',
+
+  require 'plugins/gruvbox-material',
 
   require 'plugins/todo-comments',
 
