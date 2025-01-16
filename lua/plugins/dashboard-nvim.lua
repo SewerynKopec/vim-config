@@ -84,7 +84,7 @@ return {
                 config = {
                     header = header_text,
                     week_header = {
-                        enable = false
+                        enable = true
                     }
                 }
             })
