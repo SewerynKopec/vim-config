@@ -138,7 +138,7 @@ return {
       local servers = {
         jsonls = { },
         yamlls= { },
-        tsserver = { },
+        -- tsserver = { },
         cssls = { },
         -- clangd = {},
         -- gopls = {},
