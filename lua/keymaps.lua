@@ -47,3 +47,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Center after moving down/up
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>:normal! zz<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>:normal! zz<CR>', { noremap = true })
+
+-- Faster norm 
+vim.keymap.set({'n', 'v'}, '<leader>n', ':norm ')
