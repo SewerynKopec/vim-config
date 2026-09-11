@@ -116,6 +116,21 @@ return {
                 '⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡆⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
                 '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠃⠀⠸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
             }
+            local smol_hornet_ascii = {
+                '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡲⠃⢠⡆⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠋⡠⠊⡠⠊⢘⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⠀⡸⠁⠀⡜⢀⠜⠀⠀⠎⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠋⠁⠀⠀⡠⠃⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⡇⣦⠀⢀⣴⡆⢀⠞⠀⠀⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⢇⠻⠀⠿⠛⣡⠎⠀⠀⠀⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⠸⣿⠛⠛⣿⠃⠀⠀⠀⠀⣀⣾⣉⡇',
+                '⠀⠀⠀⠀⠀⢀⢔⠏⡄⠱⡑⢕⡦⣤⡶⠛⠉⠀⠀⠀',
+                '⠀⠀⠀⠀⢰⣧⠃⢀⡃⠀⠘⣄⣹⡿⠃⠀⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⢀⣩⠿⠛⢻⡏⢻⡏⠉⠀⠀⠀⠀⠀⠀⠀',
+                '⠀⣀⠴⠚⠁⠀⠀⠀⠸⡇⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀',
+                '⠉⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀',
+                '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀',
+            }
 
             local day_map = {
                 [0] = "Sunday",
@@ -130,7 +145,7 @@ return {
             local current_day_number = tonumber(os.date("%w"))
             local current_day = day_map[current_day_number]
             -- local header_text = week_ascii_text[current_day]
-            local header_text = hornet_ascii
+            local header_text = smol_hornet_ascii
             
             require('dashboard').setup ({
                 theme = 'hyper',
@@ -139,6 +154,11 @@ return {
                     week_header = {
                         enable = false
                     }
+                },
+                hide = {
+                    statusline = false,
+                    tabline = true,
+                    winbar = false
                 }
             })
         end,
